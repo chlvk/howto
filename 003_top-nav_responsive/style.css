@@ -1,0 +1,121 @@
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: darkblue;
+}
+
+.top-nav__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.top-nav__item:hover,
+.top-nav__item:focus {
+  background-color: gray;
+}
+
+.top-nav__item--active {
+  background-color: blueviolet;
+}
+
+.top-nav__item--active .top-nav__link {
+  cursor: default;
+}
+
+.top-nav__item--dropdown {
+  position: relative;
+}
+
+.top-nav__item--dropdown:hover .top-nav__sublist,
+.top-nav__item--dropdown:focus .top-nav__sublist {
+  display: flex;
+}
+
+.top-nav__link {
+  display: flex;
+  padding: 15px;
+  color: white;
+}
+
+.top-nav__link svg {
+  position: relative;
+  margin-left: 4px;
+  fill: currentColor;
+}
+
+.top-nav__sublist {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: none;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  background-color: beige;
+}
+
+.top-nav__subitem:hover,
+.top-nav__subitem:focus {
+  background-color: lightblue;
+}
+
+.top-nav__sublink {
+  display: block;
+  padding: 10px 15px;
+  color: black;
+  white-space: nowrap; /* чтобы текст подпункта умещался в одну строку  */
+}
+
+.top-nav__control {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  padding: 17px;
+}
+
+.top-nav__control-btn {
+  align-self: center;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  padding: 0;
+  color: white;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.top-nav__control-btn:hover,
+.top-nav__control-btn:focus {
+  color: black;
+}
+
+.top-nav__control svg {
+  fill: currentColor;
+}
+
+@media (max-width: 480px) {
+  .top-nav__control {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+  }
+
+  .top-nav__list {
+    flex-grow: 1;
+    flex-direction: column;
+  }
+
+  .js-nav-hidden .top-nav__item:not(:first-child) {
+    display: none;
+  }
+
+  .top-nav__sublist {
+    position: static;
+  }
+}

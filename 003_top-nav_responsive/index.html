@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="normalize.css">
+  <link rel="stylesheet" href="default.css">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <nav class="top-nav">
+    <ul class="top-nav__list js-list">
+      <li class="top-nav__item top-nav__item--active">
+        <a href="javascript:void(0);" class="top-nav__link">Home</a>
+      </li>
+      <li class="top-nav__item">
+        <a href="javascript:void(0);" class="top-nav__link">News</a>
+      </li>
+      <li class="top-nav__item">
+        <a href="javascript:void(0);" class="top-nav__link">Contact</a>
+      </li>
+      <li class="top-nav__item top-nav__item--dropdown">
+        <a href="javascript:void(0);" class="top-nav__link">
+          Dropdown
+          <span>
+            <svg width="10" height="10">
+              <use xlink:href="sprite-sheet.svg#sort-down"></use>
+            </svg>
+          </span>
+        </a>
+        <ul class="top-nav__sublist">
+          <li class="top-nav__subitem">
+            <a href="" class="top-nav__sublink">1 item             sdggsddgsdg</a>
+          </li>
+          <li class="top-nav__subitem">
+            <a href="" class="top-nav__sublink">2 item</a>
+          </li>
+          <li class="top-nav__subitem">
+            <a href="" class="top-nav__sublink">3 item</a>
+          </li>
+        </ul>
+      </li>
+      <li class="top-nav__item">
+        <a href="javascript:void(0);" class="top-nav__link">About</a>
+      </li>
+    </ul>
+    <div class="top-nav__control js-control">
+      <button class="top-nav__control-btn">
+        <span class="visually-hidden">Показать навигацию</span>
+        <svg width="15" height="15">
+          <use xlink:href="sprite-sheet.svg#menu"></use>
+        </svg>
+      </button>
+    </div>
+
+  </nav>
+  <main>
+    <h1>Heading</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores maxime ipsum iure at ipsam vitae maiores cum
+      fugiat voluptate totam?</p>
+  </main>
+</body>
+
+</html>
