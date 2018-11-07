@@ -3,12 +3,12 @@
 }
 
 .calendar-header {
-  text-align: center;
-  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 30px 15px;
+  text-align: center;
+  color: white;
   background-color: blue;
 }
 
@@ -17,13 +17,13 @@
 }
 
 .calendar-control {
-  cursor: pointer;
-  background-color: transparent;
-  border: none;
-  padding: 0;
   width: 30px;
   height: 30px;
+  padding: 0;
   text-align: center;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .calendar-control svg {
@@ -31,12 +31,12 @@
 }
 
 .calendar-week-list {
+  display: flex;
+  align-items: center;
+  margin: 0;
   padding: 10px 50px;
   list-style: none;
-  margin: 0;
-  display: flex;
   text-align: center;
-  align-items: center;
   background-color: lightgrey;
 }
 
@@ -45,19 +45,18 @@
 }
 
 .calendar-days-list {
-  padding: 10px 50px 5px;
-  list-style: none;
-  margin: 0;
   display: flex;
   flex-wrap: wrap;
-  text-align: center;
   align-items: center;
+  margin: 0;
+  padding: 10px 50px 5px;
+  list-style: none;
+  text-align: center;
   background-color: beige;
 }
 
 .calendar-days-list li {
+  flex-shrink: 0;
   flex-basis: 14.25%;
   margin-bottom: 5px;
-  /* flex-grow: 1; */
-  flex-shrink: 0;
 }
