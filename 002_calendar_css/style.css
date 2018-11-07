@@ -1,0 +1,63 @@
+.calendar {
+  width: 800px;
+}
+
+.calendar-header {
+  text-align: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 15px;
+  background-color: blue;
+}
+
+.calendar-month {
+  text-transform: uppercase;
+}
+
+.calendar-control {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+}
+
+.calendar-control svg {
+  fill: white;
+}
+
+.calendar-week-list {
+  padding: 10px 50px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  background-color: lightgrey;
+}
+
+.calendar-week-list li {
+  flex: 1;
+}
+
+.calendar-days-list {
+  padding: 10px 50px 5px;
+  list-style: none;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  align-items: center;
+  background-color: beige;
+}
+
+.calendar-days-list li {
+  flex-basis: 14.25%;
+  margin-bottom: 5px;
+  /* flex-grow: 1; */
+  flex-shrink: 0;
+}

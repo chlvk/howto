@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <symbol id="left-chevron" viewBox="0 0 407.44 407.44">
+        <path d="M315.87 21.18L294.62 0 91.57 203.72l203.05 203.72 21.25-21.18-181.95-182.54z"/>
+    </symbol>
+    <symbol id="right-chevron" viewBox="0 0 407.44 407.44">
+        <path d="M112.81 0L91.57 21.18l181.94 182.54L91.57 386.26l21.24 21.18 203.06-203.72z"/>
+    </symbol>
+</svg>
