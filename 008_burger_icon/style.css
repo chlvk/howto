@@ -1,0 +1,37 @@
+.burger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50px;
+  height: 50px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.burger::before,
+.burger::after {
+  content: "";
+}
+
+.burger span,
+.burger::before,
+.burger::after {
+  height: 7px;
+  background-color: black;
+  width: inherit;
+  transition: 0.5s transform, 0.2s opacity;
+}
+
+.burger--open::after {
+  transform: rotate(45deg) translate(-14px, -16px);
+}
+
+.burger--open::before {
+  transform: rotate(-45deg) translate(-14px, 16px);
+}
+
+.burger--open span {
+  opacity: 0;
+}
